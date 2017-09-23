@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   
+    <ul class="nav navbar-nav">
+        <a href="#" class="btn btn-info btn-lg">
+           Inst<span class="glyphicon glyphicon-home"></span>rent
+          </a>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href="#"> Find Rental Properties</a></li>
+      <li><a href="#"> Sign in</a></li>
+      <li><a href="#">Sign Up</a></li> -->
+      
+      <li *ngFor="let names of headerList" [value]="names.id"><a [routerLink]="names.Route">{{names.name}}</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+          
+        
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

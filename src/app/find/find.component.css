@@ -1,0 +1,24 @@
+input:focus,select:focus{
+    outline: 0px;
+    
+}
+.selection select,input{
+    
+      border-style: none;
+      border-bottom: 1px solid grey;
+}
+.img-responsive{
+    max-width: 400px;
+    border-radius:3px;
+    margin-top: 10px;
+
+  
+
+}
+.card{
+    float: left;
+}
+
+.card-text{
+    margin-top: 80px;
+}
